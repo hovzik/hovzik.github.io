@@ -86,6 +86,7 @@ li {
 	height: 400px;
 	margin-top: -200px;
 	margin-left: 300px;
+	padding-right: 50px;
 
 	overflow-x: scroll;
 	overflow-y: hidden;
@@ -95,7 +96,26 @@ li {
 .asset {
 	display: inline-block;
 	/*float: left;*/
-	margin: 0;
+	margin: 0 0.5em;
+	vertical-align: top;
+}
+
+.text {
+	/*display: inline-block;*/
+	height: 400px;
+	width: 400px;
+	vertical-align: top;
+	/*overflow-x: initial;*/
+	/*width: 400px;*/
+}
+
+.col {
+	/*max-width: 400px;*/
+	/*columns: 3 400px;*/
+}
+
+.col p {
+	/*max-width: 400px;*/
 }
 
 img {
@@ -103,15 +123,5 @@ img {
 }
 
 .content {
-	background-color: #fff;
-}
-
-.columns {
-	/*border: 1px solid red;*/
-	/*height: 400px;*/
-}
-
-
-p {
-	/*border: 1px solid black;*/
+	/*background-color: #fff;*/
 }
