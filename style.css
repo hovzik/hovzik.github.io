@@ -76,7 +76,7 @@
 		width: 100%;
 	}
 
-	.container {
+	.container, .image, .text {
 		width: 90%;
 		margin: 2em auto;
 	}
