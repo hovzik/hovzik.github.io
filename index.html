@@ -5,16 +5,77 @@
 	<style type="text/css"></style>
 	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script src="js/jquery.mousewheel.js"></script>
-	<script>
+	<!-- <script src="js/jquery.mousewheel.js"></script> -->
+
+	<!-- <script type="text/javascript">
+		$(window).on("load resize",function(e){
+  			$(function() {
+				$("body").mousewheel(function(event, delta) {
+					this.scrollLeft -= (delta * 1);
+					event.preventDefault();
+				});
+			});
+		});
+	</script> -->
+	
+	<!-- <script type="text/javascript">
+		$(window).on('resize',function() {
+			var wi = $(window).width();
+			if (wi >= 900){
+				$(function() {
+					$("body").mousewheel(function(event, delta) {
+						this.scrollLeft -= (delta * 1);
+						event.preventDefault();
+					});
+				});
+			} else {
+				
+			}
+		});
+		$(document).ready(function() {
+    		$(window).trigger('resize');
+		});
+	</script> -->
+
+<!-- 	<script type="text/javascript">
+		
+		$(window).ready(function() {
+    		var wi = $(window).width();
+
+    		if (wi >= 900){
+    			$(function() {
+					$("body").mousewheel(function(event, delta) {
+						this.scrollLeft -= (delta * 1);
+						event.preventDefault();
+					});
+				});
+    		}
+    	});
+ 
+		$(window).resize(function() {
+    		var wi = $(window).width();
+
+    		if (wi >= 900){
+    			$(function() {
+					$("body").mousewheel(function(event, delta) {
+						this.scrollLeft -= (delta * 1);
+						event.preventDefault();
+					});
+				});
+    		}
+		});
+	</script>
+ -->
+	<!-- <script>
 		$(function() {
 			$("body").mousewheel(function(event, delta) {
 				this.scrollLeft -= (delta * 1);
 				event.preventDefault();
 			});
 		});
-	</script>
+	</script> -->
 </head>
 <body>
 
