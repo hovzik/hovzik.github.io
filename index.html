@@ -5,16 +5,16 @@
 	<style type="text/css"></style>
 	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
-	<!-- <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js?ver=1.3.2'></script>
-	<script type='text/javascript' src='/js/jquery.mousewheel.min.js'></script> -->
-	<!-- <script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script>
 		$(function() {
 			$("body").mousewheel(function(event, delta) {
-				this.scrollLeft -= (delta * 30);
-			event.preventDefault();
+				this.scrollLeft -= (delta * 1);
+				event.preventDefault();
 			});
 		});
-	</script> -->
+	</script>
 </head>
 <body>
 
@@ -39,39 +39,31 @@
 	<div class="content">
 
 		<div class="asset">
-			<div class="img">
-				<a href="impermanence_inverted"><img src="img/pomme.jpg"></a>
+			<div class="container">
+				<a href="impermanence_inverted"><img src="img/pomme.jpg" class="image"></a>
+				<a href="impermanence_inverted" class="caption">impermanence inverted, 2018</a>
 			</div>
-			<!-- <div class="caption">
-				<p>impermanence inverted, 2018</p>
-			</div> -->
 		</div>
 
 		<div class="asset">
-			<div class="img">
-				<a href="where_i_find_the_seed_of_home"><img src="img/bullet_wool.jpg"></a>
+			<div class="container">
+				<a href="where_i_find_the_seed_of_home"><img src="img/bullet_wool.jpg" class="image"></a>
+				<a href="where_i_find_the_seed_of_home" class="caption">where i find the seed of home, 2018</a>
 			</div>
-			<!-- <div class="caption">
-				<p>where i find the seed of home, 2018</p>
-			</div> -->
 		</div>
 
 		<div class="asset">
-			<div class="img">
-				<a href="capsulae"><img src="img/glass.jpg"></a>
+			<div class="container">
+				<a href="capsulae"><img src="img/glass.jpg" class="image"></a>
+				<a href="capsulae" class="caption">capsulae, 2018</a>
 			</div>
-			<!-- <div class="caption">
-				<p>capsulae</p>
-			</div> -->
 		</div>
 
 		<div class="asset">
-			<div class="img">
-				<a href="abandon_embrace"><img src="img/keys.jpg"></a>
+			<div class="container">
+				<a href="abandon_embrace"><img src="img/keys.jpg" class="image"></a>
+				<a class="caption">abandon / emabrace, 2018</a>
 			</div>
-			<!-- <div class="caption">
-				<p>abandon / emabrace</p>
-			</div> -->
 		</div>
 
 	</div>

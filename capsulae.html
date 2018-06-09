@@ -5,6 +5,16 @@
 	<style type="text/css"></style>
 	<link rel="stylesheet" href="style.css">
 	<meta charset="UTF-8">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="js/jquery.mousewheel.js"></script>
+	<script>
+		$(function() {
+			$("body").mousewheel(function(event, delta) {
+				this.scrollLeft -= (delta * 1);
+				event.preventDefault();
+			});
+		});
+	</script>
 </head>
 <body>
 

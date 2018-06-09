@@ -7,6 +7,11 @@ body {
 	font-size: 14px;
 }
 
+p {
+	/*font-family: Courier New;*/
+	color: #282828;
+}
+
 a, a:visited {
 	text-decoration: none;
 	color: #000;
@@ -104,22 +109,52 @@ li {
 	vertical-align: top;
 }
 
+/*HOVER EFFECT*/
+
+.container {
+	position: relative;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  /*width: 100%;*/
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.caption {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .caption {
+  opacity: 1;
+}
+
+a.caption:hover {
+	text-decoration: none;
+}
+
+/*HOVER EFFECT*/
+
 .text {
-	/*display: inline-block;*/
+	/*display: inline-block;
 	height: 400px;
 	width: 400px;
 	vertical-align: top;
 	/*overflow-x: initial;*/
 	/*width: 400px;*/
-}
-
-.col {
-	/*max-width: 400px;*/
-	/*columns: 3 400px;*/
-}
-
-.col p {
-	/*max-width: 400px;*/
 }
 
 img {
