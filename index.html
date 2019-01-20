@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+	<style type="text/css">
+		html {
+			background-color: #4A525A;
+		}
+		* {
+			font-family: 'Inconsolata', monospace;
+			color: #eee;
+			/*font-size: 0.9rem;*/
+			/*line-height: 1.3rem;*/
+		}
+		a {
+			color: inherit;
+		}
+		.temp {
+			width: 450px;
+			height: 150px;
+			margin: auto;
+			/*padding: 20px 20px 20px 20px;*/
+			position: absolute; /*it can be fixed too*/
+        	left:0; right:0;
+        	top:0; bottom:0;
+        	margin:auto;
+			
+			/*this to solve "the content will not be cut when the window is smaller than the content": */
+        	max-width:90%;
+        	max-height:90%;
+        	overflow:auto;
+		}
+		p {
+			display: block;
+			vertical-align: middle;
+		}
+	</style>
+</head>
+<body>
+	<div class="temp">
+		<p>danylo is working on his new website...</p>
+		<p>but you can <a href="mailto:hovzik@gmail.com">email</a> him, find him on <a href="https://www.facebook.com/hovzik">facebook</a>, <a href="https://www.twitter.com/hovzik">twitter</a>, or like his photos on <a href="https://www.instagram.com/hovzik/">instagram</a>.</p>
+	</div>
+</body>
+</html>
