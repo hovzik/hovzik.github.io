@@ -17,6 +17,10 @@
 		a {
 			color: inherit;
 		}
+		a:hover {
+			background-color: #eee;
+			color: #4A525A;
+		}
 		.temp {
 			width: 450px;
 			height: 150px;
@@ -36,41 +40,6 @@
 			display: block;
 			vertical-align: middle;
 		}
-		a {
-   &:before,
-	&:after {
-		content: '';
-		position: absolute;
-		bottom: 2px;
-		left: 0; right: 0;
-		height: 2px;
-		background-color: $red;
-	}
-	&:before {
-		opacity: 0;
-		transform: translateY(- $distance);
-		transition: transform 0s $easeOutBack, opacity 0s;
-	}
-	&:after {
-		opacity: 0;
-		transform: translateY($distance/2);
-		transition: transform $duration $easeOutBack, opacity $duration;
-	}
-	&:hover,
-	&:focus {
-		&:before,
-		&:after {
-			opacity: 1;
-			transform: translateY(0);
-		}
-		&:before {
-			transition: transform $duration $easeOutBack, opacity $duration;
-		}
-		&:after {
-			transition: transform 0s $duration $easeOutBack, opacity 0s $duration;
-		}
-	}
-}
 	</style>
 </head>
 <body>
